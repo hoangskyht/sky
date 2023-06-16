@@ -1,0 +1,8 @@
+version: '3'
+services: 
+  xrayr: 
+    image: ghcr.io/AZZ-vopp/XrayR-:latest
+    volumes:
+      - ./config:/etc/XrayR/
+    restart: always
+    network_mode: host
